@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Tenta adicionar o jogador e, se falhar, exibe mensagem de erro
         if (!manager.addPlayer(name)) {
-            nameError.textContent = `O jogador "${name}" já existe!`;
+            nameError.textContent = `O contador "${name}" já existe!`;
             nameError.style.display = 'block';
             playerNameInput.value = '';
             playerNameInput.focus();
