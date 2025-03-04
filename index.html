@@ -10,41 +10,41 @@
 </head>
 <body>
     <div class="container my-4">
-        <h1 class="text-center">Contador</h1>
-        <div class="d-flex justify-content-center my-3">
-            <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#addPlayerModal">
-                <i class="bi bi-plus-circle"></i> Adicionar Contador
-            </button>
-            <button class="btn btn-outline-warning me-2" id="resetAllBtn">
-                <i class="bi bi-arrow-counterclockwise"></i> Zerar Todos
-            </button>
-            <button class="btn btn-outline-danger" id="deleteAllBtn">
-                <i class="bi bi-trash"></i> Excluir Todos
-            </button>
-        </div>
-        <div id="playersContainer" class="row g-3"></div>
+      <h1 class="text-center">Contador</h1>
+      <div class="d-flex justify-content-center my-3">
+        <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#addCounterModal">
+          <i class="bi bi-plus-circle"></i> Adicionar Contador
+        </button>
+        <button class="btn btn-outline-warning me-2" id="resetAllBtn">
+          <i class="bi bi-arrow-counterclockwise"></i> Zerar Todos
+        </button>
+        <button class="btn btn-outline-danger" id="deleteAllBtn">
+          <i class="bi bi-trash"></i> Excluir Todos
+        </button>
+      </div>
+      <div id="countersContainer" class="row g-3"></div>
     </div>
-
-    <!-- Modal para adicionar jogador -->
-    <div class="modal fade" id="addPlayerModal" tabindex="-1" aria-labelledby="addPlayerModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addPlayerModalLabel">Adicionar Jogador</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="addPlayerForm">
-                        <div class="mb-3">
-                            <label for="playerName" class="form-label">Nome do Jogador</label>
-                            <input type="text" class="form-control" id="playerName" required>
-                            <div id="nameError" class="text-danger mt-1"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Adicionar</button>
-                    </form>
-                </div>
-            </div>
+  
+    <!-- Modal para adicionar um contador -->
+    <div class="modal fade" id="addCounterModal" tabindex="-1" aria-labelledby="addCounterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addCounterModalLabel">Adicionar Contador</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="addCounterForm">
+              <div class="mb-3">
+                <label for="counterName" class="form-label">Descrição do Contador</label>
+                <input type="text" class="form-control" id="counterName" required>
+                <div id="counterError" class="text-danger mt-1"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Adicionar</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Script-->

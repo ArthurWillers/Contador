@@ -1,17 +1,17 @@
-#nameError {
+#counterError {
   display: none;
 }
 
-.player-card {
+.counter-card {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin: 5px;
 }
-.player-card h4 {
+.counter-card h4 {
   margin-bottom: 10px;
 }
-.player-card .btn {
+.counter-card .btn {
   margin: 2px;
 }
